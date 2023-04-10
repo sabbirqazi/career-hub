@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const AppliedJobs = () => {
   const savedJobs = JSON.parse(localStorage.getItem("savedJobs")) || [];
@@ -26,12 +26,15 @@ const AppliedJobs = () => {
             </div>
             <div>
               {" "}
-              <button
+             {/*  <button
                 onClick={() => navigate(`jobDetails/${job.id}`)}
                 className="btn btn-primary"
               >
                 Details{" "}
-              </button>
+              </button> */}
+              <Link to={`/jobDetails/${job.id}`}>
+                        <button className="btn btn-primary   rounded-none   bg-gradient-to-t from-[#7E90FE] to-[#9873FF]  border-none">View details</button>
+                    </Link>
             </div>
           </div>
         </div>

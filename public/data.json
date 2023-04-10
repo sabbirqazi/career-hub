@@ -1,8 +1,8 @@
 [
     {
       "id": "1aaaaaaaaabb",
-      "logo": "https://example.com/logo1.png",
-      "company_name": "ABC Company",
+      "logo": "https://1000logos.net/wp-content/uploads/2021/05/Google-logo-500x281.png",
+      "company_name": "Google LLC",
       "job_title": "Software Engineer",
       "job_type": "Full-time",
       "location": "New York",
@@ -16,8 +16,8 @@
     },
     {
       "id": "2bbbbbbccc",
-      "logo": "https://example.com/logo2.png",
-      "company_name": "XYZ Corporation",
+      "logo": "https://1000logos.net/wp-content/uploads/2023/01/Airbnb-logo.png",
+      "company_name": "AIR BNB",
       "job_title": "Marketing Manager",
       "job_type": "Part-time",
       "location": "Los Angeles",
@@ -31,8 +31,8 @@
     },
     {
       "id": "3dddddeeeee",
-      "logo": "https://example.com/logo3.png",
-      "company_name": "123 Enterprises",
+      "logo": "https://1000logos.net/wp-content/uploads/2017/05/Netflix-Logo-500x281.png",
+      "company_name": "Netflix",
       "job_title": "Data Analyst",
       "job_type": "Full-time",
       "location": "San Francisco",
@@ -48,8 +48,8 @@
 
    
       "id": "4eeeeeeeefffffff",
-      "logo": "https://example.com/logo4.png",
-      "company_name": "456 Inc.",
+      "logo": "https://1000logos.net/wp-content/uploads/2021/04/Tesla-logo-500x281.png",
+      "company_name": "Tesla Corporation",
       "job_title": "Graphic Designer",
       "job_type": "Contract",
       "location": "Chicago",
@@ -63,8 +63,8 @@
     },
     {
         "id": "5gggggggghhhhhh",
-        "logo": "https://example.com/logo5.png",
-        "company_name": "XYZ Corporation",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png",
+        "company_name": "Amazon Ltd",
         "job_title": "Web Developer",
         "job_type": "Full-time",
         "location": "Boston",
@@ -78,8 +78,8 @@
       },
       {
         "id": "6ddddvvvvvv",
-        "logo": "https://example.com/logo6.png",
-        "company_name": "ABC Company",
+        "logo": "https://download.logo.wine/logo/Hulu/Hulu-Logo.wine.png",
+        "company_name": "Hulu Entertainment",
         "job_title": "Product Manager",
         "job_type": "Full-time",
         "location": "Seattle",

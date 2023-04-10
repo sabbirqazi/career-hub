@@ -9,6 +9,12 @@ const Home = () => {
   /*   const handleClick = () =>{
       setClicked(false);
     } */
+   /*  const [showAllJobs, setShowAllJobs] = useState(false);
+  
+    jobs = showAllJobs ? jobs : jobs.slice(0, 4);
+  
+    const handleSeeAllClick = () => {
+      setShowAllJobs(true);} */
     return (
         <>
           <div className='bg-gray-100 my-container flex flex-col-reverse lg:flex-row justify-between pt-20 mb-10'>
@@ -47,9 +53,13 @@ const Home = () => {
              
            </div>
 
-       <div className='text-center'>   
-        <button className='btn btn-accent'>See All</button>
-      </div>
+           {!showAllJobs && (
+        <div className='text-center'>
+          <button className='btn btn-accent' onClick={handleSeeAllClick}>
+            See All
+          </button>
+        </div>
+      )}
            
             </section> 
         </>

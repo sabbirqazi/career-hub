@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const FeaturedJob = ({job}) => {
    const {id, logo, job_title, job_type, sallary , location, company_name} = job;
@@ -7,7 +7,7 @@ const FeaturedJob = ({job}) => {
     return (
         <>
           <div className='h-96 w-88 rounded-lg border-gray-50 bg-gray-100 p-8'>
-          <img src={logo} alt="" />
+          <img className='object-fit h-16 w-32' src={logo} alt=""  />
           <p>{job_title}</p>
           <p>{company_name}</p>
           <p>{job_type}</p>
