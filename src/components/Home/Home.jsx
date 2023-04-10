@@ -3,18 +3,17 @@ import FeaturedJob from '../FeaturedJob/FeaturedJob';
 import JobCategory from '../JobCategory/JobCategory';
 import heroImg from '../../assets/All Images/P3OLGJ1 copy 1.png'
 import { useLoaderData } from 'react-router-dom';
+import { useState } from 'react';
 const Home = () => {
-    const jobs = useLoaderData();
+    let jobs = useLoaderData();
     console.log(jobs);
-  /*   const handleClick = () =>{
-      setClicked(false);
-    } */
-   /*  const [showAllJobs, setShowAllJobs] = useState(false);
+  
+   const [showAllJobs, setShowAllJobs] = useState(false);
   
     jobs = showAllJobs ? jobs : jobs.slice(0, 4);
   
     const handleSeeAllClick = () => {
-      setShowAllJobs(true);} */
+      setShowAllJobs(true);} 
     return (
         <>
           <div className='bg-gray-100 my-container flex flex-col-reverse lg:flex-row justify-between pt-20 mb-10'>
