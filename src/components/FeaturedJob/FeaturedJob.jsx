@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 const FeaturedJob = ({job}) => {
    const {id, logo, job_title, job_type, sallary , location, company_name} = job;
@@ -16,9 +16,7 @@ const FeaturedJob = ({job}) => {
             <p>{sallary}</p>
 
           </div>
-          <Link onClick={()=>navigate(`jobDetails/${id}`)} className="btn btn-primary">
-            details
-          </Link>
+          <button onClick={()=>navigate(`jobDetails/${id}`)} className="btn btn-primary">Details </button>
           </div>
         </>
     );

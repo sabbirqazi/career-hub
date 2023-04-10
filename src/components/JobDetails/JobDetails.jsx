@@ -1,21 +1,26 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+
 const JobDetails = () => {
+    const jobs = useLoaderData();
+    
     const dynamic = useParams();
     console.log(dynamic)
-    const [jobs, setJobs] = useState([]);
-
+    const [details, setDetails] = useState([]);
+    
     useEffect(() => {
-        fetch("data.json")
-          .then((res) => res.json())
-          .then((data) => console.log(data));
+        const jobb = jobs.find(job => job.id === dynamic.id)
          
+         setDetails(jobb)
       }, []);
-
+     
+ console.log(details)
     return (
         <div>
-            This is dynamic
+          {
+            console.log(details.id) 
+          }
         </div>
     );
 };
