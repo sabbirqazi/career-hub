@@ -1,7 +1,24 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const AppliedJobs = () => {
   const savedJobs = JSON.parse(localStorage.getItem("savedJobs")) || [];
+  const [filteredJobs, setFilteredJobs] = useState(savedJobs)
+
+  const [jobTypeFilter, setJobTypeFilter] = useState("");
+
+  
+  const handleJobTypeFilterChange = (event) => {
+    setJobTypeFilter(event.target.value);
+    if (event.target.value === "") {
+      setFilteredJobs(savedJobs);
+    } else {
+      const filteredJobs = savedJobs.filter(
+        (job) => job.job_type.includes(event.target.value)
+      );
+      setFilteredJobs(filteredJobs);
+    }
+  };
 
   return (
     <>
@@ -12,9 +29,23 @@ const AppliedJobs = () => {
           </h1>
         </div>
       </div>
+     
+      <div className="flex justify-end items-center my-container mt-20">
+          <label className="mr-2 text-xl font-bold">Filter job: </label>
+          <select
+            value={jobTypeFilter}
+            onChange={handleJobTypeFilterChange}
+            className="rounded-md px-5 py-3 text-md border-gray-700 bg-gray-300"
+          >
+            <option value="">All</option>
+            <option value="Remote">Remote</option>
+            <option value="Onsite">Onsite</option>
+          </select>
+        </div>
 
-      {savedJobs.map((job) => (
-        <div key={job.id} className="my-container my-20">
+     
+      {filteredJobs.map((job) => (
+        <div key={job.id} className="my-container mb-20 mt-5">
           <div className=" border-box border-2 border-gray-300 rounded-lg flex justify-between  items-center bg-gray-50 p-6 ">
             <div className=" h-26 w-32">
               <img src={job.logo} alt="" />
@@ -89,6 +120,7 @@ const AppliedJobs = () => {
           </div>
         </div>
       ))}
+    
     </>
   );
 };

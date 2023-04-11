@@ -16,8 +16,8 @@ const Home = () => {
       setShowAllJobs(true);} 
     return (
         <>
-          <div className='bg-gray-100 my-container flex flex-col-reverse lg:flex-row justify-between pt-20 mb-10'>
-            <div className='flex flex-col ml-5 lg:ml-20 pt-10'>
+          <div className='bg-gray-100 my-container flex flex-col-reverse lg:flex-row justify-between pt-20 mb-10 '>
+            <div className='ml-5 lg:ml-20 pt-10 py-10 '>
              <h1 className='text-5xl flex flex-col  pt-5 font-semibold'>
                 <span className='py-2'>
                 One Step 
@@ -26,7 +26,7 @@ const Home = () => {
                 <span className='py-2 text-indigo-400'> Dream Job</span>
              </h1>
              <p className='tex-xl py-5'>Explore thousands of job opportunities with all the <br /> information you need. Its your future. Come find it.  Manage all your job application from start to finish.</p>
-             <button className='px-8 py-3 w-30 font-semibold rounded bg-cyan-200 text-gray-900'>Get Started</button>
+             <button className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>Get Started</button>
             </div>
             <div>
               <img src={heroImg} className="hero-img" alt="" />

@@ -87,7 +87,7 @@ const Header = () => {
             title="GlassWall"
             className=" normal-case text-xl"
           >
-            GlassWall
+            <span className="text-3xl font-bold"> Job<span className="text-cyan-500">Seeker</span></span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
