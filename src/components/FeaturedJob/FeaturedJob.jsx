@@ -65,7 +65,7 @@ const FeaturedJob = ({ job }) => {
         </div>
         <button
           onClick={() => navigate(`jobDetails/${id}`)}
-          className="px-8 py-3 w-48 font-semibold rounded bg-cyan-200 text-gray-900 text-xl"
+          className="px-8 py-3 w-48 font-semibold rounded btn-main text-xl"
         >
           View Details{" "}
         </button>

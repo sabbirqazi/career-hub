@@ -24,6 +24,7 @@ const AppliedJobs = () => {
     <>
       <div className="bg-gray-100 ">
         <div>
+         
           <h1 className="text-4xl font-bold text-center py-36 text-indigo-500">
             You Have Applied These Jobs{" "}
           </h1>
@@ -112,7 +113,7 @@ const AppliedJobs = () => {
             </div>
             <div >
               <Link to={`/jobDetails/${job.id}`}>
-                <button className="px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900">
+                <button className="px-8 py-3 font-semibold rounded btn-main">
                   View details
                 </button>
               </Link>

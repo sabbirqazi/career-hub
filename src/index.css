@@ -13,4 +13,6 @@
   .default{
     @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-cyan-600
   }
- 
+ .btn-main{
+  @apply bg-gradient-to-r from-green-400 to-blue-500 text-base-100 duration-200  hover:from-indigo-500 hover:to-purple-700 
+ }

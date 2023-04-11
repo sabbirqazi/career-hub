@@ -26,7 +26,7 @@ const Home = () => {
                 <span className='py-2 text-indigo-400'> Dream Job</span>
              </h1>
              <p className='tex-xl py-5'>Explore thousands of job opportunities with all the <br /> information you need. Its your future. Come find it.  Manage all your job application from start to finish.</p>
-             <button className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>Get Started</button>
+             <button className='px-8 py-3 font-semibold rounded btn-main'>Get Started</button>
             </div>
             <div>
               <img src={heroImg} className="hero-img" alt="" />
@@ -54,7 +54,7 @@ const Home = () => {
 
            {!showAllJobs && (
         <div className='text-center'>
-          <button className='px-20 py-3 text-xl font-semibold rounded bg-cyan-200 text-gray-900' onClick={handleSeeAllClick}>
+          <button className='px-20 py-3 text-xl font-semibold rounded btn-main' onClick={handleSeeAllClick}>
             See All
           </button>
         </div>

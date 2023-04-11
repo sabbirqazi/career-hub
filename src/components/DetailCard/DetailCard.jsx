@@ -185,7 +185,7 @@ const DetailCard = ({ details }) => {
             </div>
           </div>
           <button
-            className="px-10 py-3 mt-3 font-semibold rounded bg-cyan-200 text-gray-900"
+            className="px-10 py-3 mt-3 font-semibold rounded btn-main"
             onClick={handleApplyNow}
           >
             Apply Now

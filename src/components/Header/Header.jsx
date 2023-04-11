@@ -87,7 +87,7 @@ const Header = () => {
             title="GlassWall"
             className=" normal-case text-xl"
           >
-            <span className="text-3xl font-bold"> Job<span className="text-cyan-500">Seeker</span></span>
+            <span className="text-3xl font-bold text-indigo-500"> Job<span className="text-purple-700">Seeker</span></span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -138,7 +138,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>Start Applying</button>
+          <button className='px-8 py-3 font-semibold rounded btn-main'>Start Applying</button>
         </div>
       </div>
       </div>
