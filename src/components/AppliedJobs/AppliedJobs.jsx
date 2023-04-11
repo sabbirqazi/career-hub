@@ -1,18 +1,22 @@
-import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const AppliedJobs = () => {
   const savedJobs = JSON.parse(localStorage.getItem("savedJobs")) || [];
-  const navigate = useNavigate()
+ 
+
+
+
+
   return (
     <>
       <h1>Applied Jobs</h1>
-
+    
       {savedJobs.map((job) => (
         <div key={job.id} className="my-container my-10">
           <div className="h-30 w-88 rounded-lg flex justify-between border-gray-50 bg-gray-100 p-8">
             <div>
-              <img src={job.logo} alt="" />
+              <img className="object-fit" src={job.logo} alt="" />
             </div>
             <div>
               {" "}
@@ -25,15 +29,9 @@ const AppliedJobs = () => {
               </div>
             </div>
             <div>
-              {" "}
-             {/*  <button
-                onClick={() => navigate(`jobDetails/${job.id}`)}
-                className="btn btn-primary"
-              >
-                Details{" "}
-              </button> */}
+          
               <Link to={`/jobDetails/${job.id}`}>
-                        <button className="btn btn-primary   rounded-none   bg-gradient-to-t from-[#7E90FE] to-[#9873FF]  border-none">View details</button>
+                        <button className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>View details</button>
                     </Link>
             </div>
           </div>
@@ -44,3 +42,5 @@ const AppliedJobs = () => {
 };
 
 export default AppliedJobs;
+
+

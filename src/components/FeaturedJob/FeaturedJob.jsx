@@ -16,7 +16,7 @@ const FeaturedJob = ({job}) => {
             <p>{sallary}</p>
 
           </div>
-          <button onClick={()=>navigate(`jobDetails/${id}`)} className="btn btn-primary">Details </button>
+          <button onClick={()=>navigate(`jobDetails/${id}`)} className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>View Details </button>
           </div>
         </>
     );

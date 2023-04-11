@@ -1,12 +1,14 @@
 import React from 'react';
 
 const DetailCard = ({details}) => {
-    const {id, job_description, job_responsibility, educational_requirements, experience, salary, job_title, location, phone ,email} = details;
+    const {id, job_description, job_responsibility, educational_requirements, experience, salary, job_title, location, phone ,email, logo, job_type} = details;
 
     const handleApplyNow = () => {
         const savedJobs = JSON.parse(localStorage.getItem('savedJobs')) || [];
       
         const dataToSave = {
+          logo,
+          job_type,  
           id,
           job_description,
           job_responsibility,
@@ -50,7 +52,7 @@ const DetailCard = ({details}) => {
             <p>Address: {location}</p>
            </div>
            </div>
-           <button className='btn btn-accent' onClick={handleApplyNow}>Apply Now</button>
+           <button className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900' onClick={handleApplyNow}>Apply Now</button>
            </div>
           </div>
         </>
