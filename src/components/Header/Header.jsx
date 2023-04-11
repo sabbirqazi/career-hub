@@ -4,8 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="navbar my-container bg-gray-100">
-        <div className="navbar-start">
+    <div className="bg-gray-100">
+      <div className="navbar my-container ">
+        <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -137,8 +138,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <NavLink className="btn btn-accent">Start Applying</NavLink>
+          <button className='px-8 py-3 font-semibold rounded bg-cyan-200 text-gray-900'>Start Applying</button>
         </div>
+      </div>
       </div>
     </>
   );

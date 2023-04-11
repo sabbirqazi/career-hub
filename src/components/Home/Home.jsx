@@ -1,7 +1,7 @@
 /* import React, { useState } from 'react'; */
 import FeaturedJob from '../FeaturedJob/FeaturedJob'; 
 import JobCategory from '../JobCategory/JobCategory';
-import heroImg from '../../assets/All Images/P3OLGJ1 copy 1.png'
+import heroImg from '../../assets/Images/P3OLGJ1 copy 1.png'
 import { useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
                 <span className='py-2 text-indigo-400'> Dream Job</span>
              </h1>
              <p className='tex-xl py-5'>Explore thousands of job opportunities with all the <br /> information you need. Its your future. Come find it.  Manage all your job application from start to finish.</p>
-             <button type='button' className='btn btn-accent '>Get Started</button>
+             <button className='px-8 py-3 w-30 font-semibold rounded bg-cyan-200 text-gray-900'>Get Started</button>
             </div>
             <div>
               <img src={heroImg} className="hero-img" alt="" />
@@ -34,10 +34,10 @@ const Home = () => {
           </div>  
           <JobCategory></JobCategory>
           {/* feature job */}
-          <section>
+          <section className='my-10'>
             <div className='my-container my-20'>
                 <h1 className='text-center text-bold text-4xl'>Featured Jobs</h1>
-                <p className='text-center text-xl'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <p className='text-center text-xl py-5'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
            <div className='my-container my-10 grid grid-cols-1 lg:grid-cols-2 gap-5 justify-around'>
@@ -54,7 +54,7 @@ const Home = () => {
 
            {!showAllJobs && (
         <div className='text-center'>
-          <button className='btn btn-accent' onClick={handleSeeAllClick}>
+          <button className='px-20 py-3 text-xl font-semibold rounded bg-cyan-200 text-gray-900' onClick={handleSeeAllClick}>
             See All
           </button>
         </div>

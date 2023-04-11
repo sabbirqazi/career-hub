@@ -23,6 +23,13 @@ const {id, job_description, job_responsibility, educational_requirements, experi
     return (
         <>
          <section>
+         <div className='bg-gray-100 '>
+            <div>
+            <h1 className="text-4xl font-bold text-center py-32 text-indigo-500">
+          Your Selected Job Details{" "}
+        </h1>
+            </div>
+            </div> 
           <DetailCard details ={details}
           
           ></DetailCard>
