@@ -6,7 +6,7 @@ import { useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
 const Home = () => {
     let jobs = useLoaderData();
-    console.log(jobs);
+   
   
    const [showAllJobs, setShowAllJobs] = useState(false);
   
