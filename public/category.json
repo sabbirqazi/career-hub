@@ -1,0 +1,22 @@
+[
+    {   "id": "abc",
+        "categorylogo" : "https://cdn-icons-png.flaticon.com/512/4599/4599640.png",
+        "typeOfjob"  : "Account and Finance",
+        "availableJob": "300 Jobs Available"
+    },
+    {    "id": "abd",
+        "categorylogo" : "https://cdn-icons-png.flaticon.com/512/4599/4599844.png",
+        "typeOfjob"  : "Engineering Job",
+        "availableJob": "100 Jobs Available"
+    },
+    {  "id": "abe",
+        "categorylogo" : "https://cdn-icons-png.flaticon.com/512/4599/4599655.png",
+        "typeOfjob"  : "Creative Design",
+        "availableJob": "140 Jobs Available"
+    },
+    {  "id": "abf",
+        "categorylogo" : "https://cdn-icons-png.flaticon.com/512/4599/4599613.png",
+        "typeOfjob"  : "Marketing & Sales",
+        "availableJob": "120+ Jobs Available"
+    }
+]
